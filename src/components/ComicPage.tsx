@@ -25,7 +25,7 @@ export const ComicPage = () => {
         BAM!
       </div>
       <div className="max-w-6xl mx-auto px-2 sm:px-4">
-        <ComicPanel text="Congratulations Baby, Oh the Places You'll Go!" backgroundColor="bg-pink-100" textColor="text-purple-800" position="left" illustration={<motion.div animate={{
+        <ComicPanel text="Congratulations Baby! Oh the Places You'll Go!" backgroundColor="bg-pink-100" textColor="text-purple-800" position="left" illustration={<motion.div animate={{
         rotate: [0, 10, 0, -10, 0]
       }} transition={{
         repeat: Infinity,
@@ -35,7 +35,7 @@ export const ComicPage = () => {
             </motion.div>} />
         {/* First comic image */}
         <ComicImage src={imageUrls[0]} position="right" rotation={3} delay={0.1} caption="You did, I was here" />
-        <ComicPanel text="Hey Sham Sham! Today is your day. You're off to Great Places! You're off and away!" backgroundColor="bg-blue-100" textColor="text-blue-700" position="right" delay={0.2} illustration={<motion.div animate={{
+        <ComicPanel text="Hey Sham Sham! Today is your day. You're off to Great Places! You're off and  from Uniben stress!" backgroundColor="bg-blue-100" textColor="text-blue-700" position="right" delay={0.2} illustration={<motion.div animate={{
         y: [0, -10, 0]
       }} transition={{
         repeat: Infinity,
@@ -53,7 +53,7 @@ export const ComicPage = () => {
             </motion.div>} />
         {/* Second comic image */}
         <ComicImage src={imageUrls[1]} position="left" rotation={-2} delay={0.3} caption="The beginning" />
-        <ComicPanel text="You're on your own, and YOU decide where to go." backgroundColor="bg-yellow-100" textColor="text-yellow-800" position="right" delay={0.4} illustration={<motion.div animate={{
+        <ComicPanel text="You're on your own, and YOU decide where to go now." backgroundColor="bg-yellow-100" textColor="text-yellow-800" position="right" delay={0.4} illustration={<motion.div animate={{
         rotate: [0, 360]
       }} transition={{
         repeat: Infinity,
@@ -82,7 +82,7 @@ export const ComicPage = () => {
             DAWN, YOU'LL MOVE MOUNTAINS!
           </h2>
         </motion.div>
-        <ComicPanel text="You're off to Great Places! Your mountain is waiting. So… get on your way!" backgroundColor="bg-blue-100" textColor="text-blue-800" position="right" delay={0.8} illustration={<motion.div animate={{
+        <ComicPanel text="You're off to Great Places! CONGRATULATIONS on your sign out Baby!" backgroundColor="bg-blue-100" textColor="text-blue-800" position="right" delay={0.8} illustration={<motion.div animate={{
         y: [0, -5, 0],
         scale: [1, 1.05, 1]
       }} transition={{

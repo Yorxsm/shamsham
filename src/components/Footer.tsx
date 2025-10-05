@@ -37,7 +37,7 @@ export const Footer: React.FC<FooterProps> = ({
         delay: 0.2
       }}>
           <p className="text-lg text-purple-800 flex items-center justify-center">
-            Made with
+            5194 with
             <motion.span animate={{
             scale: [1, 1.2, 1]
           }} transition={{
