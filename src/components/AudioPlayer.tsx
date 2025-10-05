@@ -10,7 +10,7 @@ export const AudioPlayer = () => {
   useEffect(() => {
     if (!audioInitialized) {
       const audio = new Audio();
-      audio.src = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'; // Fallback music
+      audio.src = process.env.PUBLIC_URL + '/music.mp3'; // Fallback music
       audio.loop = true;
       audioRef.current = audio;
       // Set up event listeners
@@ -36,7 +36,7 @@ export const AudioPlayer = () => {
           console.error('Audio play failed:', error);
           // Try with a different audio source if the first one fails
           if (audioRef.current) {
-            audioRef.current.src = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
+            audioRef.current.src = process.env.PUBLIC_URL + '/music.mp3';
             audioRef.current.play().then(() => {
               setIsPlaying(true);
             }).catch(e => console.error('Backup audio failed too:', e));
