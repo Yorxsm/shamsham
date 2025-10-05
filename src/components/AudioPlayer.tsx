@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { VolumeXIcon, Volume2Icon } from 'lucide-react';
 import { motion } from 'framer-motion';
-import musicFile from '../assets/music.mp3';
 
 
 export const AudioPlayer = () => {
@@ -12,8 +11,8 @@ export const AudioPlayer = () => {
   // Create audio element only once
   useEffect(() => {
     if (!audioInitialized) {
-      const audio = new Audio();
-      audio.src = musicFile; // Fallback music
+      const audio = new Audio('/music.mp3');
+      audio.src = '/music.mp3'; // Fallback music
       audio.loop = true;
       audioRef.current = audio;
       // Set up event listeners
@@ -39,7 +38,7 @@ export const AudioPlayer = () => {
           console.error('Audio play failed:', error);
           // Try with a different audio source if the first one fails
           if (audioRef.current) {
-            audioRef.current.src = musicFile;
+            audioRef.current.src = '/music.mp3';
             audioRef.current.play().then(() => {
               setIsPlaying(true);
             }).catch(e => console.error('Backup audio failed too:', e));
